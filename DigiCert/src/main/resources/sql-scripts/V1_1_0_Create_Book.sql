@@ -1,0 +1,5 @@
+CREATE TABLE Book(
+id int AUTO_INCREMENT PRIMARY KEY,
+title CARCHAR(45),
+author VARCHAR(45)
+);
