@@ -11,8 +11,10 @@ import javax.persistence.Table;
 import com.sun.istack.NotNull;
 
 
-// This class declares my Book entity and maps its values to the database. 
-// Also provides private variables and public getter and setter methods for accessing this Object.
+/*
+ * This class declares my Book entity and maps its values to the database. 
+ * Also provides private variables and public getter and setter methods for accessing this Object.
+ */
 @Entity
 @Table(name="Book")
 public class Book {

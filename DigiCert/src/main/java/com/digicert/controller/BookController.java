@@ -46,6 +46,7 @@ public class BookController {
 		
 		
 	}
+	
 	/* 
 	 * This method gets all available books from the database.
 	 * Converts the List of Books into a List of JsonNodes and returns the list of JsonNodes.
@@ -62,7 +63,8 @@ public class BookController {
 		return new ResponseEntity<List<JsonNode>>(listOfJson, HttpStatus.OK);
 	}
 	
-	/* This method checks to see if the book is available via Book id. 
+	/* 
+	 * This method checks to see if the book is available via Book id. 
 	 * If it is, converts the Book object into a JsonNode and sends the JsonNode back to the client.
 	 * If it is not available, it returns a 400 error.
 	 */ 
@@ -83,7 +85,8 @@ public class BookController {
 		
 	}
 	
-	/* This method checks to see if the book is available to update if the Book id exists. 
+	/* 
+	 * This method checks to see if the book is available to update if the Book id exists. 
 	 * If it is, sets the original Book fields to its new values and converts the Book object into a JsonNode and returns the 
 	 * updated Book back to the client. 
 	 * If it is not available, returns a 400 error. 
@@ -107,7 +110,8 @@ public class BookController {
 		
 	}
 	
-	/* This method checks to see if the book is available to remove from database via Book id search. 
+	/* 
+	 * This method checks to see if the book is available to remove from database via Book id search. 
 	 * If it is available, deletes the Book object from the database and sends a 200 status back to the client. 
 	 * If it is not available, sends a 400 error back to the client. 
 	 */
